@@ -5,7 +5,37 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+      },
+    },
+    extend: {
+      fontFamily: {
+        belleza: ["Belleza"],
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    require("daisyui"),
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.ico",
+      },
+    },
+  ],
+  daisyui: {
+    themes: [
+      "retro",
+      "lemonade",
+      "autumn",
+      "wireframe",
+      "cupcake",
+      "garden",
+      "pastel",
+      "nord",
+    ],
+  },
+};
