@@ -22,7 +22,7 @@ const center = {
 
 const Estudio = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDXaNgCknwK9Yi-Gg4L2FKOh7cDE5jBhSY",
+    googleMapsApiKey: "",
     libraries,
   });
 
