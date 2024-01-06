@@ -2,7 +2,8 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { HeadFC } from "gatsby";
 
-import Gilberto from "../images/gilberto1.jpg";
+import Gilberto from "../images/gilberto.jpg";
+import Karla from "../images/karla.jpg";
 import DivAnimated from "../components/DivAnimated";
 
 const Maestros = () => {
@@ -67,8 +68,8 @@ const Maestros = () => {
                 <div className="hero-content lg:items-start flex-col lg:flex-row gap-8">
                   <div className="flex lg:hidden">
                     <img
-                      alt="Gilberto Carrillo Yoga"
-                      src={Gilberto}
+                      alt="Karla Carrillo Yoga"
+                      src={Karla}
                       className="w-full lg:w-auto max-w-sm m-0 rounded-lg shadow-2xl"
                     />
                   </div>
