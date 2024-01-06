@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`navbar z-20 fixed transition-all duration-500 ${
+        className={`navbar z-[100] fixed transition-all duration-500 ${
           top || open ? "bg-transparent" : "bg-neutral-content opacity-90"
         }`}
       >
