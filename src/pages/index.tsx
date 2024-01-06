@@ -17,7 +17,7 @@ const IndexPage: React.FC<PageProps> = () => {
             Clases de Yoga Iyengar
           </p>
           <p className="text-center italic text-lg sm:text-xl">
-            ¡Te invitamos a formar parte de nuestra comunidad y a explorar los
+            ¡Te invitamos a formar parte de nuestro grupo y a explorar los
             múltiples beneficios que el Yoga Iyengar puede aportar a tu vida!
           </p>
           <p className="text-center text-xl sm:text-2xl mt-16 mb-6 font-bold">
@@ -45,12 +45,22 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </div>
-      <div className="w-full relative">
-        <div className="bg-[url('../images/home/estudio1.jpg')] w-full h-screen bg-cover bg-[70%] bg-no-repeat" />
-        <div className="absolute w-full top-1/2 -translate-y-1/2 text-center bg-base-100/50 text-accent-content py-6 text-3xl font-semibold">
-          <button className="" onClick={() => navigate("/estudio")}>
-            Nuestro estudio
-          </button>
+      <div className="hero min-h-screen bg-[url('../images/home/estudio1.jpg')]">
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">Estudio</h1>
+            <p className="mb-5 text-xl sm:text-2xl">
+              Tenemos todo lo necesario para que tu práctica sea segura,
+              profunda y divertida.
+            </p>
+            <button
+              className="btn btn-primary w-full sm:w-auto min-w-[200px] text-lg"
+              onClick={() => navigate("/estudio")}
+            >
+              Ver más
+            </button>
+          </div>
         </div>
       </div>
       <Contacto />
@@ -60,4 +70,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <title>Home</title>;

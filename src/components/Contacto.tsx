@@ -8,6 +8,14 @@ const Contacto = () => {
           <p className="font-belleza text-2xl sm:text-4xl text-center">
             CONTACTO
           </p>
+          <p className="text-center">
+            Envíanos un mensaje
+            <br /> También puedes contactarnos por{" "}
+            <a href="mailto:" target="_blank">
+              correo
+            </a>{" "}
+            o WhatsApp
+          </p>
           <label className="form-control w-full mb-4">
             <div className="label">
               <span className="label-text sm:text-lg">¿Cuál es tu nombre?</span>
