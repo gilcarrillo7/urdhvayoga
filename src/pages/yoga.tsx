@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 
 import Image from "../images/iyengarhanumanasana.jpeg";
 import { HeadFC } from "gatsby";
+import DivAnimated from "../components/DivAnimated";
 
 const Yoga = () => {
   return (
@@ -27,41 +28,46 @@ const Yoga = () => {
           <h1 className="font-belleza font-bold text-3xl sm:text-5xl mt-8 sm:mt-16 mb-4">
             ¿Qué es el yoga?
           </h1>
-          <p className="mb-4">
-            Patañjali en su obra de los Yoga Sutras define al yoga como el cese
-            de las fluctuaciones de la mente (yogaś cittavrittinirodhah), más
-            adelante también describe los 8 pasos para alcanzar Samadhi
-            (liberación); dentro de esos pasos encontramos la práctica de
-            posturas (ásana) y respiración (pranayama), muy presentes en la
-            práctica moderna del yoga.
-          </p>
-          <p className="mb-6 sm:mb-8">
-            Esa es la filosofía en la que se sustenta el yoga. Sin dejar por
-            completo de lado su origen, la praćtica contemporánea de yoga está
-            mas enfocada en una práctica postural y de respiración, la cual nos
-            ayuda a lidiar con los problemas cotidianos de la vida moderna,
-            ayuda a reducir el estrés, mejorar la salud e incrementar la
-            vitalidad.
-          </p>
+          <DivAnimated>
+            <p className="mb-4">
+              Patañjali en su obra de los Yoga Sutras define al yoga como el
+              cese de las fluctuaciones de la mente (yogaś cittavrittinirodhah),
+              más adelante también describe los 8 pasos para alcanzar Samadhi
+              (liberación); dentro de esos pasos encontramos la práctica de
+              posturas (ásana) y respiración (pranayama), muy presentes en la
+              práctica moderna del yoga.
+            </p>
+            <p className="mb-6 sm:mb-8">
+              Esa es la filosofía en la que se sustenta el yoga. Sin dejar por
+              completo de lado su origen, la praćtica contemporánea de yoga está
+              mas enfocada en una práctica postural y de respiración, la cual
+              nos ayuda a lidiar con los problemas cotidianos de la vida
+              moderna, ayuda a reducir el estrés, mejorar la salud e incrementar
+              la vitalidad.
+            </p>
+          </DivAnimated>
           <div className="divider divider-neutral my-6" />
-          <h1 className="font-belleza font-bold text-2xl sm:text-3xl mb-4">
-            Yoga Iyengar
-          </h1>
-          <p className="mb-4">
-            Es el método desarrollado por B.K.S. Iyengar, diseñado para que
-            cualquier persona pueda practicar ásanas (posturas) sin importar su
-            edad, flexibilidad o condición física.
-          </p>
-          <p className="mb-4">
-            Está basado en acciones, ejecutando estas acciones se llegán a
-            distintos objetivos. Regularmente se utilizan props (apoyos) para
-            tener un práctica amable y a la vez profunda.
-          </p>
-          <p className="mb-8 sm:mb-16">
-            El Yoga Iyengar es muy versátil; es alineación pero también
-            movimiento, a veces es detallista y otras es dinámico, puede llegar
-            a ser una práctica intensa pero a la vez segura y sanadora!.
-          </p>
+          <DivAnimated>
+            <h1 className="font-belleza font-bold text-2xl sm:text-3xl mb-4">
+              Yoga Iyengar
+            </h1>
+            <p className="mb-4">
+              Es el método desarrollado por B.K.S. Iyengar, diseñado para que
+              cualquier persona pueda practicar ásanas (posturas) sin importar
+              su edad, flexibilidad o condición física.
+            </p>
+            <p className="mb-4">
+              Está basado en acciones, ejecutando estas acciones se llegán a
+              distintos objetivos. Regularmente se utilizan props (apoyos) para
+              tener un práctica amable y a la vez profunda.
+            </p>
+            <p className="mb-8 sm:mb-16">
+              El Yoga Iyengar es muy versátil; es alineación pero también
+              movimiento, a veces es detallista y otras es dinámico, puede
+              llegar a ser una práctica intensa pero a la vez segura y
+              sanadora!.
+            </p>
+          </DivAnimated>
         </div>
       </div>
     </Layout>

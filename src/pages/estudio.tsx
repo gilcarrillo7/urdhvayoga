@@ -9,6 +9,8 @@ import Img3 from "../images/estudio/cinturon.jpg";
 import Img4 from "../images/estudio/bolster.jpg";
 import Img5 from "../images/estudio/cobijas.jpg";
 import Img6 from "../images/estudio/cuerdas1.jpg";
+import DivAnimated from "../components/DivAnimated";
+import Loader from "../components/Loader";
 
 const libraries: any[] = ["places"];
 const mapContainerStyle = {
@@ -31,7 +33,7 @@ const Estudio = () => {
   }
 
   if (!isLoaded) {
-    return <div>Loading maps</div>;
+    return <Loader />;
   }
 
   return (
@@ -40,69 +42,84 @@ const Estudio = () => {
         <div className="bg-[url('../images/estudio/header1.jpg')] w-full h-[40vh] sm:h-[60vh] bg-cover bg-[35%] sm:bg-[30%] bg-no-repeat mt-[120px] sm:mt-0" />
       </div>
       <div className="container">
-        <div className="sm:w-2/3 lg:w-3/4 mx-auto text-justify text-lg sm:text-xl font-light pt-4 sm:pt-8">
-          <h1 className="text-center font-belleza font-bold text-3xl sm:text-5xl mt-6 sm:mt-8 sm:mt-16 mb-4">
-            Estudio
-          </h1>
-          <p className="text-center mb-4 sm:mb-8">
-            Estamos comprometidos a ofrecer un ambiente enriquecedor y seguro
-            donde puedas explorar y profundizar en tu práctica de yoga.
-          </p>
-          <p className="text-center mb-4 sm:mb-8">
-            En nuestro estudio contamos con una amplia gama de props de yoga
-            Iyengar para adaptarnos a las necesidades individuales de cada
-            practicante.
-          </p>
-        </div>
+        <DivAnimated>
+          <div className="sm:w-2/3 lg:w-3/4 mx-auto text-justify text-lg sm:text-xl font-light pt-4 sm:pt-8">
+            <h1 className="text-center font-belleza font-bold text-3xl sm:text-5xl mt-6 sm:mt-8 sm:mt-16 mb-4">
+              Estudio
+            </h1>
+            <p className="text-center mb-4 sm:mb-8">
+              Estamos comprometidos a ofrecer un ambiente enriquecedor y seguro
+              donde puedas explorar y profundizar en tu práctica de yoga.
+            </p>
+            <p className="text-center mb-4 sm:mb-8">
+              En nuestro estudio contamos con una amplia gama de props de yoga
+              Iyengar para adaptarnos a las necesidades individuales de cada
+              practicante.
+            </p>
+          </div>
+        </DivAnimated>
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
-          <div className="card bg-base-100 shadow-lg image-full">
-            <figure>
-              <img src={Img1} alt="Bloques Yoga" />
-            </figure>
-            <div className="card-body flex justify-center items-center">
-              <h2 className="card-title text-3xl font-belleza">Bloques</h2>
+          <DivAnimated classNameHidden="translate-y-24">
+            <div className="card bg-base-100 shadow-lg image-full">
+              <figure>
+                <img src={Img1} alt="Bloques Yoga" />
+              </figure>
+              <div className="card-body flex justify-center items-center">
+                <h2 className="card-title text-3xl font-belleza">Bloques</h2>
+              </div>
             </div>
-          </div>
-          <div className="card bg-base-100 shadow-lg image-full">
-            <figure>
-              <img src={Img6} alt="Cuerdas Yoga" />
-            </figure>
-            <div className="card-body flex justify-center items-center">
-              <h2 className="card-title text-3xl font-belleza">Cuerdas</h2>
+          </DivAnimated>
+          <DivAnimated classNameHidden="translate-y-24">
+            <div className="card bg-base-100 shadow-lg image-full">
+              <figure>
+                <img src={Img6} alt="Cuerdas Yoga" />
+              </figure>
+              <div className="card-body flex justify-center items-center">
+                <h2 className="card-title text-3xl font-belleza">Cuerdas</h2>
+              </div>
             </div>
-          </div>
-          <div className="card bg-base-100 shadow-lg image-full">
-            <figure>
-              <img src={Img3} alt="Cinturones Yoga" />
-            </figure>
-            <div className="card-body flex justify-center items-center">
-              <h2 className="card-title text-3xl font-belleza">Cinturones</h2>
+          </DivAnimated>
+          <DivAnimated classNameHidden="translate-y-24">
+            <div className="card bg-base-100 shadow-lg image-full">
+              <figure>
+                <img src={Img3} alt="Cinturones Yoga" />
+              </figure>
+              <div className="card-body flex justify-center items-center">
+                <h2 className="card-title text-3xl font-belleza">Cinturones</h2>
+              </div>
             </div>
-          </div>
-          <div className="card bg-base-100 shadow-lg image-full">
-            <figure>
-              <img src={Img4} alt="Bolster Yoga" />
-            </figure>
-            <div className="card-body flex justify-center items-center">
-              <h2 className="card-title text-3xl font-belleza">Bolster</h2>
+          </DivAnimated>
+          <DivAnimated classNameHidden="translate-y-24">
+            <div className="card bg-base-100 shadow-lg image-full">
+              <figure>
+                <img src={Img4} alt="Bolster Yoga" />
+              </figure>
+              <div className="card-body flex justify-center items-center">
+                <h2 className="card-title text-3xl font-belleza">Bolster</h2>
+              </div>
             </div>
-          </div>
-          <div className="card bg-base-100 shadow-lg image-full">
-            <figure>
-              <img src={Img5} alt="Cobijas Yoga" />
-            </figure>
-            <div className="card-body flex justify-center items-center">
-              <h2 className="card-title text-3xl font-belleza">Cobijas</h2>
+          </DivAnimated>
+          <DivAnimated classNameHidden="translate-y-24">
+            <div className="card bg-base-100 shadow-lg image-full">
+              <figure>
+                <img src={Img5} alt="Cobijas Yoga" />
+              </figure>
+              <div className="card-body flex justify-center items-center">
+                <h2 className="card-title text-3xl font-belleza">Cobijas</h2>
+              </div>
             </div>
-          </div>
-          <div className="card bg-base-100 shadow-lg image-full">
-            <figure>
-              <img src={Img2} alt="Sillas Yoga" />
-            </figure>
-            <div className="card-body flex justify-center items-center">
-              <h2 className="card-title text-3xl font-belleza">Sillas</h2>
+          </DivAnimated>
+          <DivAnimated classNameHidden="translate-y-24">
+            <div className="card bg-base-100 shadow-lg image-full">
+              <figure>
+                <img src={Img2} alt="Sillas Yoga" />
+              </figure>
+              <div className="card-body flex justify-center items-center">
+                <h2 className="card-title text-3xl font-belleza">Sillas</h2>
+              </div>
             </div>
-          </div>
+          </DivAnimated>
         </div>
       </div>
       <div className="container mt-8">
@@ -133,6 +150,9 @@ const Estudio = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-full mt-12 mb-16">
+        <div className="bg-[url('../images/estudio/estudio1.jpg')] w-full h-[40vh] sm:h-[60vh] bg-cover bg-[35%] sm:bg-[30%] bg-no-repeat mt-[120px] sm:mt-0" />
       </div>
     </Layout>
   );
