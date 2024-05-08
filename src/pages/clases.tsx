@@ -43,7 +43,7 @@ const Clases = () => {
               <h2 className="mt-8 mb-4 text-center font-belleza font-bold text-2xl sm:text-4xl">
                 Horarios
               </h2>
-              <div className="overflow-x-auto flex justify-center mb-4">
+              <div className="overflow-x-auto flex justify-center mb-2">
                 <div className="w-full sm:w-1/2">
                   <table className="table table-zebra text-xl">
                     <tbody>
@@ -140,6 +140,9 @@ const Clases = () => {
                       </tr>
                     </tbody>
                   </table>
+                  <p className="text-center my-2 sm:my-4 font-bold text-lg">
+                    50% de descuento en mensualidades para menores de 25 años.
+                  </p>
                 </div>
               </div>
             </DivAnimated>

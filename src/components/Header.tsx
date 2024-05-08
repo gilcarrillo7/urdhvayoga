@@ -57,13 +57,30 @@ const Header = () => {
           </Link>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle w-8 sm:w-12">
+          <button
+            className="btn btn-ghost btn-circle w-8 sm:w-12"
+            onClick={() =>
+              window.open("https://www.instagram.com/urdhvayogaestudio")
+            }
+          >
             <Instagram />
           </button>
-          <button className="btn btn-ghost btn-circle w-8 sm:w-12">
+          <button
+            className="btn btn-ghost btn-circle w-8 sm:w-12"
+            onClick={() =>
+              window.open("https://www.facebook.com/urdhvayogaestudio")
+            }
+          >
             <Facebook />
           </button>
-          <button className="btn btn-ghost btn-circle w-8 sm:w-12">
+          <button
+            className="btn btn-ghost btn-circle w-8 sm:w-12"
+            onClick={() =>
+              window.open(
+                "https://wa.me/+525516145283"
+              )
+            }
+          >
             <Whatsapp />
           </button>
         </div>
