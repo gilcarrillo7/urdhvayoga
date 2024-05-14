@@ -3,7 +3,6 @@ import { navigate, type HeadFC, type PageProps } from "gatsby";
 import { useInView } from "react-intersection-observer";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
-import Contacto from "../components/Contacto";
 
 const IndexPage: React.FC<PageProps> = () => {
   const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
@@ -80,7 +79,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </div>
-      <div className="hero min-h-screen bg-[url('../images/home/estudio1.jpg')]">
+      <div className="hero min-h-screen mb-8 bg-[url('../images/home/estudio1.jpg')]">
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div
@@ -103,7 +102,6 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </div>
-      <Contacto />
     </Layout>
   );
 };

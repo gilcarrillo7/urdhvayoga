@@ -154,15 +154,20 @@ const Clases = () => {
                     ? "translate-y-0 opacity-100"
                     : "translate-y-24 opacity-0"
                 }`}
+                onClick={() => window.open("https://wa.me/+525516145283")}
               >
                 Quiero tomar una clase
               </button>
             </div>
             <p className="text-center mb-8 sm:mb-16">
               Para clases particulares{" "}
-              <Link to="/#contacto" className="underline">
+              <a
+                href="https://wa.me/+525516145283"
+                target="_blank"
+                className="underline"
+              >
                 contactanos
-              </Link>
+              </a>
               .
             </p>
           </div>

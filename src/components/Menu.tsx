@@ -29,13 +29,6 @@ const Menu = ({ setOpen }: { setOpen: (v: boolean) => void }) => {
         >
           Maestros
         </Link>
-        <Link
-          className="text-3xl sm:text-4xl font-belleza text-neutral hover:underline"
-          to="/#contacto"
-          onClick={() => setOpen(false)}
-        >
-          Contacto
-        </Link>
       </div>
     </div>
   );

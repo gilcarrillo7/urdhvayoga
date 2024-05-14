@@ -92,8 +92,8 @@ const Maestros = () => {
                   </div>
                   <div className="hidden lg:flex">
                     <img
-                      alt="Gilberto Carrillo Yoga"
-                      src={Gilberto}
+                      alt="Karla Carrillo Yoga"
+                      src={Karla}
                       className="w-full lg:w-auto max-w-sm m-0 rounded-lg shadow-2xl"
                     />
                   </div>
