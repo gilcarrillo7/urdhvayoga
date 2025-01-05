@@ -50,7 +50,7 @@ const Clases = () => {
                       <tr>
                         <th className="">Lunes</th>
                         <td className="text-center">
-                          <p className="">19:00 - 20:20 hrs</p>
+                          <p className="">19:30 - 20:50 hrs</p>
                           <p className="text-sm font-bold">Multinivel</p>
                           <p className="text-sm">Presencial y en línea</p>
                         </td>
@@ -58,7 +58,7 @@ const Clases = () => {
                       <tr>
                         <th>Miércoles</th>
                         <td className="text-center">
-                          <p className="">19:00 - 20:20 hrs</p>
+                          <p className="">19:30 - 20:50 hrs</p>
                           <p className="text-sm font-bold">Multinivel</p>
                           <p className="text-sm">Presencial y en línea</p>
                         </td>
@@ -99,7 +99,7 @@ const Clases = () => {
                       <tr>
                         <td className="text-center">
                           <p className="font-semibold">1 clase por semana</p>
-                          <p className="text-2xl my-2">$500</p>
+                          <p className="text-2xl my-2">$600</p>
                           <p className="text-sm font-bold">Mensualidad</p>
                         </td>
                         <td className="text-center">
@@ -110,20 +110,13 @@ const Clases = () => {
                       </tr>
                       <tr>
                         <td className="text-center">
-                          <p className="font-semibold">3 clases por semana</p>
-                          <p className="text-2xl my-2">$900</p>
-                          <p className="text-sm font-bold">Mensualidad</p>
-                        </td>
-                        <td className="text-center">
                           <p className="font-semibold">Todas las clases</p>
                           <p className="text-2xl my-2">$1000</p>
                           <p className="text-sm font-bold">Mensualidad</p>
                         </td>
-                      </tr>
-                      <tr>
-                        <td className="text-center" colSpan={2}>
+                        <td className="text-center">
                           <p className="font-semibold">Clase suelta</p>
-                          <p className="text-2xl my-2">$135</p>
+                          <p className="text-2xl my-2">$180</p>
                           <p className="text-sm font-bold">
                             Sin pago de mensualidad
                           </p>
@@ -132,7 +125,7 @@ const Clases = () => {
                       <tr>
                         <td className="text-center" colSpan={2}>
                           <p className="font-semibold">Primera clase</p>
-                          <p className="text-2xl my-2">$50</p>
+                          <p className="text-2xl my-2">$100</p>
                           <p className="text-sm font-bold">
                             Toma tu primer clase a un precio reducido
                           </p>
@@ -154,7 +147,11 @@ const Clases = () => {
                     ? "translate-y-0 opacity-100"
                     : "translate-y-24 opacity-0"
                 }`}
-                onClick={() => window.open("https://wa.me/+525516145283")}
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/+525516145283?text=Me%20puedes%20dar%20más%20información%20sobre%20las%20clases%20de%20yoga"
+                  )
+                }
               >
                 Quiero tomar una clase
               </button>
@@ -162,7 +159,7 @@ const Clases = () => {
             <p className="text-center mb-8 sm:mb-16">
               Para clases particulares{" "}
               <a
-                href="https://wa.me/+525516145283"
+                href="https://wa.me/+525516145283?text=Me%20puedes%20dar%20más%20información%20sobre%20las%20clases%20de%20yoga"
                 target="_blank"
                 className="underline"
               >

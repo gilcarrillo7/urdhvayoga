@@ -60,7 +60,7 @@ const Header = () => {
           <button
             className="btn btn-ghost btn-circle w-8 sm:w-12"
             onClick={() =>
-              window.open("https://www.instagram.com/urdhvayogaestudio")
+              window.open("https://www.instagram.com/urdhvayogamx")
             }
           >
             <Instagram />
@@ -77,7 +77,7 @@ const Header = () => {
             className="btn btn-ghost btn-circle w-8 sm:w-12"
             onClick={() =>
               window.open(
-                "https://wa.me/+525516145283"
+                "https://wa.me/+525516145283?text=Me%20puedes%20dar%20más%20información%20sobre%20las%20clases%20de%20yoga"
               )
             }
           >
