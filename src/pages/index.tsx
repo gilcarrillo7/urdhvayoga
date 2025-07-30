@@ -38,20 +38,24 @@ const IndexPage: React.FC<PageProps> = () => {
               inView ? "opacity-100" : "opacity-0"
             }`}
           >
-            Clases de Yoga Iyengar
+            Clases de Yoga Iyengar presencial y en línea
           </p>
           <p className="text-center italic text-lg sm:text-xl">
-            ¡Te invitamos a formar parte de nuestro grupo y a explorar los
-            múltiples beneficios que el Yoga Iyengar puede aportar a tu vida!
+            Te invitamos a unirte a nuestra comunidad y descubrir cómo la
+            práctica del Yoga Iyengar puede transformar tu cuerpo, mente y
+            respiración. Explora sus beneficios con una guía precisa y
+            consciente.
           </p>
           <p className="text-center text-xl sm:text-2xl mt-16 mb-6 font-bold">
             Quiénes somos
           </p>
           <p className="text-center text-lg sm:text-xl">
-            Somos un espacio comprometido con la difusión de las enseñanzas y
-            los beneficios de la práctica del Yoga. Ofrecemos clases y talleres
-            tanto presenciales como en línea. Estamos ubicados en el sur de la
-            Ciudad de México.
+            En Urdhva Yoga somos un espacio dedicado a compartir la profundidad
+            del Yoga Iyengar, con atención al detalle, el alineamiento y la
+            consciencia corporal. Ofrecemos clases y talleres presenciales y en
+            línea, abiertos a todos los niveles. Nos encontramos en el sur de la
+            Ciudad de México, en un ambiente acogedor y equipado especialmente
+            para la práctica.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-around my-6 sm:my-12">
             <button

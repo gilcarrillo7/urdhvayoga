@@ -8,6 +8,7 @@ import Instagram from "./social/Instagram";
 import Facebook from "./social/Facebook";
 import HamburgerMenu from "./HamburgerMenu";
 import Menu from "./Menu";
+import WhatsappButton from "./commons/WhatsappButton";
 
 const Header = () => {
   const [top, setTop] = useState(false);
@@ -73,16 +74,7 @@ const Header = () => {
           >
             <Facebook />
           </button>
-          <button
-            className="btn btn-ghost btn-circle w-8 sm:w-12"
-            onClick={() =>
-              window.open(
-                "https://wa.me/+525516145283?text=Me%20puedes%20dar%20más%20información%20sobre%20las%20clases%20de%20yoga"
-              )
-            }
-          >
-            <Whatsapp />
-          </button>
+          <WhatsappButton />
         </div>
       </div>
       {open && (

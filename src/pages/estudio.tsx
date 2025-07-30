@@ -11,6 +11,7 @@ import Img5 from "../images/estudio/cobijas.jpg";
 import Img6 from "../images/estudio/cuerdas1.jpg";
 import DivAnimated from "../components/DivAnimated";
 import Loader from "../components/Loader";
+import WhatsappButton from "../components/commons/WhatsappButton";
 
 const libraries: any[] = ["places"];
 const mapContainerStyle = {
@@ -24,7 +25,7 @@ const center = {
 
 const Estudio = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "",
+    googleMapsApiKey: "AIzaSyDXaNgCknwK9Yi-Gg4L2FKOh7cDE5jBhSY",
     libraries,
   });
 
@@ -125,9 +126,7 @@ const Estudio = () => {
       <div className="container mt-8">
         <div>
           <div className="text-center mb-8 sm:mb-16">
-            <button className="btn btn-primary w-full sm:w-auto min-w-[200px] text-lg mx-auto">
-              Quiero tomar una clase
-            </button>
+            <WhatsappButton variant="full" />
           </div>
           <div className="flex flex-col sm:flex-row sm:gap-12 mb-12">
             <div className="">
@@ -142,7 +141,7 @@ const Estudio = () => {
             <div className="w-full">
               <GoogleMap
                 mapContainerStyle={mapContainerStyle}
-                zoom={13}
+                zoom={14}
                 center={center}
               >
                 <Marker position={center} />
