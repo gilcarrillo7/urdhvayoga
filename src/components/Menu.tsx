@@ -1,34 +1,42 @@
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import * as React from "react";
 
 const Menu = ({ setOpen }: { setOpen: (v: boolean) => void }) => {
+  const handleClick = (link: string) => {
+    navigate(link);
+    setOpen(false);
+  };
   return (
     <div className="w-screen h-screen z-[90] bg-neutral-content fixed top-0 left-0 flex items-center">
       <div className="container flex flex-col items-center gap-4 sm:gap-5">
-        <Link
+        <a
           className="text-3xl sm:text-4xl font-belleza text-neutral hover:underline"
-          to="/clases"
+          href="#"
+          onClick={() => handleClick("/clases")}
         >
           Clases
-        </Link>
-        <Link
+        </a>
+        <a
           className="text-3xl sm:text-4xl font-belleza text-neutral hover:underline"
-          to="/estudio"
+          href="#"
+          onClick={() => handleClick("/estudio")}
         >
           Estudio
-        </Link>
-        <Link
+        </a>
+        <a
           className="text-3xl sm:text-4xl font-belleza text-neutral hover:underline"
-          to="/yoga"
+          href="#"
+          onClick={() => handleClick("/yoga")}
         >
           Yoga
-        </Link>
-        <Link
+        </a>
+        <a
           className="text-3xl sm:text-4xl font-belleza text-neutral hover:underline"
-          to="/maestros"
+          href="#"
+          onClick={() => handleClick("/maestros")}
         >
           Maestros
-        </Link>
+        </a>
       </div>
     </div>
   );

@@ -26,6 +26,13 @@ const Clases = () => {
             >
               Clases
             </h1>
+            <p className="mb-4 text-center">
+              Las clases son para todos los niveles, desde principiantes hasta
+              avanzadosen grupos reducidos. En cada clase se ofrecen
+              modificaciones y ajustes para adaptarse a las necesidades de cada
+              estudiante. Nuestro enfoque es en la alineación, la respiración y
+              la conciencia corporal, siguiendo los principios del yoga Iyengar.
+            </p>
             <p
               className={`text-center mb-4 sm:mb-8 transition-all duration-1000 delay-500 ${
                 inView ? "opacity-100" : "opacity-0"
@@ -37,13 +44,6 @@ const Clases = () => {
               </Link>{" "}
               y clases en línea vía zoom.
             </p>
-
-            <WhatsappButton
-              variant="image"
-              image={ImgJueves}
-              alt="clase jueves"
-              message="Me interesa tomar la clase de yoga Iyengar del jueves."
-            />
 
             <DivAnimated className="delay-500">
               <h2 className="mt-8 mb-1 text-center font-belleza font-bold text-2xl sm:text-4xl">
@@ -59,17 +59,17 @@ const Clases = () => {
                       {/* Lunes */}
                       <tr className="rounded-xl shadow-sm">
                         <td className="py-4 px-4 font-semibold">Lunes</td>
-                        <td className="py-4 px-4">19:30 - 20:50 hrs</td>
+                        <td className="py-4 px-4">19:45 - 21:00 hrs</td>
                       </tr>
 
                       {/* Miércoles */}
                       <tr className="rounded-xl shadow-sm">
                         <td className="py-4 px-4 font-semibold">Miércoles</td>
-                        <td className="py-4 px-4">19:30 - 20:50 hrs</td>
+                        <td className="py-4 px-4">19:45 - 21:00 hrs</td>
                       </tr>
 
                       {/* Jueves */}
-                      <tr className="rounded-xl shadow-sm">
+                      {/* <tr className="rounded-xl shadow-sm">
                         <td className="py-4 px-4 font-semibold">Jueves</td>
                         <td className="py-4 px-4">
                           <p>19:30 - 20:30 hrs</p>
@@ -77,12 +77,12 @@ const Clases = () => {
                             Aportación: $50
                           </p>
                         </td>
-                      </tr>
+                      </tr> */}
 
                       {/* Sábado */}
                       <tr className="rounded-xl shadow-sm">
                         <td className="py-4 px-4 font-semibold">Sábado</td>
-                        <td className="py-4 px-4">08:30 - 09:50 hrs</td>
+                        <td className="py-4 px-4">08:30 - 10:00 hrs</td>
                       </tr>
 
                       {/* Clase especial */}
@@ -100,74 +100,100 @@ const Clases = () => {
                 </div>
               </div>
             </DivAnimated>
-            <div className="divider divider-neutral my-12" />
+
+            <div className="divider divider-neutral my-16" />
+
             <DivAnimated>
-              <h2 className="my-8 text-center font-belleza font-bold text-2xl sm:text-4xl">
-                Tarifas
+              <h2 className="text-center font-belleza font-bold text-3xl sm:text-5xl text-primary mb-10">
+                Paquetes Mensuales
               </h2>
-              <div className="overflow-x-auto flex justify-center mb-4">
-                <div className="w-full lg:w-1/2">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center text-xl">
-                    {/* Plan 1 */}
-                    <div className="rounded-2xl p-6 shadow-md bg-transparent border border-black">
-                      <p className="font-semibold text-lg">
-                        1 clase por semana
-                      </p>
-                      <p className="text-3xl my-2 font-bold">$600</p>
-                      <p className="text-sm tracking-wide uppercase font-bold text-gray-600">
-                        Mensualidad
-                      </p>
-                    </div>
 
-                    {/* Plan 2 */}
-                    <div className="border rounded-2xl p-6 shadow-md bg-transparent border border-black">
-                      <p className="font-semibold text-lg">
-                        2 clases por semana
+              <div className="flex justify-center">
+                <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                  {[
+                    { nombre: "5 clases", precio: "$600" },
+                    { nombre: "8 clases", precio: "$800" },
+                    {
+                      nombre: "Clases ilimitadas",
+                      precio: "$1000",
+                      destacado: false,
+                    },
+                  ].map(({ nombre, precio, destacado }, i) => (
+                    <div
+                      key={i}
+                      className={`rounded-2xl px-2 py-4 sm:p-4 xl:p-6 shadow-lg border ${
+                        destacado
+                          ? "border-primary bg-primary/10"
+                          : "border-gray-300 bg-base-100"
+                      }`}
+                    >
+                      <p
+                        className={`text-base md:text-lg font-bold tracking-wider uppercase mb-2 ${
+                          destacado ? "text-primary" : "text-primary"
+                        }`}
+                      >
+                        {nombre}
                       </p>
-                      <p className="text-3xl my-2 font-bold">$800</p>
-                      <p className="text-sm tracking-wide uppercase font-bold text-gray-600">
-                        Mensualidad
-                      </p>
-                    </div>
-
-                    {/* Plan destacado */}
-                    <div className="col-span-1 sm:col-span-2 border-2 border-primary rounded-2xl p-6 shadow-lg  bg-transparent border">
-                      <p className="font-semibold text-lg">Todas las clases</p>
-                      <p className="text-3xl my-2 font-bold text-primary">
-                        $1000
-                      </p>
-                      <p className="text-sm tracking-wide uppercase font-bold text-gray-600">
-                        Mensualidad
-                      </p>
-                    </div>
-
-                    {/* Clases sueltas */}
-                    <div className="rounded-2xl p-6 shadow-md bg-transparent border border-black">
-                      <p className="font-semibold text-lg">Clase suelta</p>
-                      <p className="text-3xl my-2 font-bold">$180</p>
-                      <p className="text-sm font-bold text-gray-600">
-                        Sin pago de mensualidad
-                      </p>
-                    </div>
-
-                    <div className="rounded-2xl p-6 shadow-md bg-transparent border border-black">
-                      <p className="font-semibold text-lg">Clase en jueves</p>
-                      <p className="text-3xl my-2 font-bold">$50</p>
-                      <p className="text-sm font-bold text-gray-600">
-                        Sin pago de mensualidad
+                      <p
+                        className={`text-2xl md:text-3xl ${
+                          destacado ? "text-primary" : "text-gray-800"
+                        }`}
+                      >
+                        {precio}
                       </p>
                     </div>
-
-                    {/* Descuento */}
-                    <div className="col-span-1 sm:col-span-2 text-center text-base mt-1 bg-blue-25 p-4 rounded-md">
-                      Menores de 25 años:{" "}
-                      <span className="font-bold">50% de descuento</span> en
-                      mensualidad
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
+
+              <p className="mt-6 text-base text-center font-bold text-gray-600">
+                Asiste en cualquier horario · Vigencia de 1 mes · Pago
+                anticipado
+              </p>
+
+              <h3 className="mt-12 mb-2 text-center font-belleza font-bold text-2xl sm:text-4xl">
+                Clase Suelta
+              </h3>
+              <p className="text-center text-base text-gray-600 mb-6">
+                Asiste sin pagar mensualidad
+              </p>
+
+              <div className="grid grid-cols-2 gap-4 w-full lg:w-4/5 mx-auto text-center">
+                {[
+                  // { precio: "$50", label: "Clase en jueves", destacado: true },
+                  {
+                    precio: "$125",
+                    label: "Clase lunes o miércoles",
+                    destacado: false,
+                  },
+                  { precio: "$150", label: "Clase en sábado" },
+                ].map(({ precio, label, destacado }, i) => (
+                  <div
+                    key={i}
+                    className={`rounded-2xl py-4 px-2 sm:p-4 xl:p-6 shadow-md border ${
+                      destacado
+                        ? "text-primary border-primary bg-primary/10"
+                        : "text-gray-600 bg-base-100 border-gray-300"
+                    }
+                        `}
+                  >
+                    <p className="text-base md:text-lg font-bold text-primary ">
+                      {label}
+                    </p>
+                    <p className="text-2xl md:text-3xl font-normal mb-2 text-gray-800">
+                      {precio}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 w-full md:w-3/4 xl:w-2/3 mx-auto bg-blue-50 border border-blue-200 text-center text-base rounded-md p-4">
+                Menores de 25 años:{" "}
+                <span className="font-bold">50% de descuento</span> en
+                mensualidad
+              </div>
             </DivAnimated>
+
             <div className="text-center my-8 sm:my-16">
               <WhatsappButton variant="full" />
             </div>
